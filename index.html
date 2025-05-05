@@ -3,54 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-        }
-        header {
-            background-color: #007BFF;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        section {
-            padding: 2rem;
-        }
-        .about {
-            background-color: #e0e7ff;
-            margin: 1rem 0;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #222;
-            color: white;
-        }
-    </style>
+    <title>Jordan Draws - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+     <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website!</h1>
-        <p>Your one-stop hub for all things me.</p>
+        <h1>Jordan Draws</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <section class="about">
+    
+    <section id="about">
         <h2>About Me</h2>
-        <p>Hello! I'm [Your Name]. I'm passionate about [Your Interests]. This site is all about sharing my work, hobbies, and stories.</p>
+        <p>Introduce yourself and your passion for design here.</p>
+    </section>
+    
+    <section id="work">
+        <h2>My Work</h2>
+        
+        <div class="gallery-container">
+            <h3>Featured Projects</h3>
+            <div class="image-slider">
+                <div class="image-stack">
+                    <div class="slide">
+                        <img src="image1.jpg" alt="Project 1">
+                        <p>Folkloric</p>
+                    </div>
+                    <div class="slide">
+                        <img src="image2.jpg" alt="Project 2">
+                        <p>Project 2</p>
+                    </div>
+                    <div class="slide">
+                        <img src="image3.jpg" alt="Project 3">
+                        <p>Project 3</p>
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(1)">&#10094;</button>
+                <button class="next"onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="categories">
+        <h2>Image Categories</h2>
+        <p>Organize your visuals into groups.</p>
     </section>
 
-    <section class="contact">
+    <section id="contact">
         <h2>Contact</h2>
-        <p>Email: yourname@example.com</p>
-        <p>Phone: (555) 555-5555</p>
+        <p>Email:jdraws2025@gmail.com</p>
+        <a href="https://www.instagram.com/jdraws2025" target="_blank">Follow me on Instagram</a>
     </section>
 
     <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>© 2025 Jordan Perez. All rights reserved.</p>
     </footer>
+
+   
 </body>
 </html>
