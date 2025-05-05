@@ -106,3 +106,9 @@ img {
     max-height: 400px; /* Limits height */
     object-fit: contain; /* Ensures the image scales properly */
 }
+h1 {
+    font-family: "Providence Sans Pro", Bold; /* Change to any font */
+    font-size: 48px; /* Adjust size */
+    font-weight: bold; /* Make it bold */
+    color: #333; /* Change the color */
+}
