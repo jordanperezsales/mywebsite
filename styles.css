@@ -1,13 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Providence Sans Pro", Bold;
     margin: 0;
     padding: 0;
     text-align: center;
 }
+h1 {
+    font-family: "Providence Sans Pro", Bold; /* Change to any font */
+    font-size: 48px; /* Adjust size */
+    font-weight: bold; /* Make it bold */
+    color: #fdfcfc; /* Change the color */
+}
 
 header {
     background-color: #333;
-    color: white;
+    color: rgb(27, 26, 26);
     padding: 20px;
 }
 
@@ -105,10 +111,4 @@ img {
     width: 80%; /* Adjust the percentage as needed */
     max-height: 400px; /* Limits height */
     object-fit: contain; /* Ensures the image scales properly */
-}
-h1 {
-    font-family: "Providence Sans Pro", Bold; /* Change to any font */
-    font-size: 48px; /* Adjust size */
-    font-weight: bold; /* Make it bold */
-    color: #333; /* Change the color */
 }
