@@ -1,20 +1,18 @@
-/* 🔹 Adobe Fonts Integration */
+/* Adobe Fonts */
 @import url("https://use.typekit.net/iud7cpa.css");
 
-/* 🔹 Apply Font to Body */
 body {
-    font-family: "ff-providence-sans-web-pro", sans-serif; /* Correct Adobe Font */
+    font-family: "ff-providence-sans-web-pro", sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-/* 🔹 Apply Font to Header */
 h1 {
-    font-family: "ff-providence-sans-web-pro", sans-serif; /* Correct Adobe Font */
-    font-size: 48px; /* Adjust size */
-    font-weight: 700; /* Ensures bold style */
-    color: #090909; /* Change the color */
+    font-family: "ff-providence-sans-web-pro", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #fdfcfc;
 }
 
 header {
@@ -52,7 +50,6 @@ footer {
     width: 100%;
 }
 
-/* Image Gallery Styling */
 .gallery-container {
     width: 60%;
     margin: auto;
@@ -111,12 +108,12 @@ button {
 }
 
 img {
-    max-width: 100%; /* Ensures images don’t overflow */
-    height: auto; /* Maintains aspect ratio */
+    max-width: 100%;
+    height: auto;
 }
 
 .image-slider img {
-    width: 80%; /* Adjust the percentage as needed */
-    max-height: 400px; /* Limits height */
-    object-fit: contain; /* Ensures the image scales properly */
+    width: 80%;
+    max-height: 400px;
+    object-fit: contain;
 }
