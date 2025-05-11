@@ -1,19 +1,25 @@
+/* 🔹 Adobe Fonts Integration */
+@import url("https://use.typekit.net/iud7cpa.css");
+
+/* 🔹 Apply Font to Body */
 body {
-    font-family: "Providence Sans Pro", Bold;
+    font-family: "ff-providence-sans-web-pro", sans-serif; /* Correct Adobe Font */
     margin: 0;
     padding: 0;
     text-align: center;
 }
+
+/* 🔹 Apply Font to Header */
 h1 {
-    font-family: "Providence Sans Pro", Bold; /* Change to any font */
+    font-family: "ff-providence-sans-web-pro", sans-serif; /* Correct Adobe Font */
     font-size: 48px; /* Adjust size */
-    font-weight: bold; /* Make it bold */
-    color: #fdfcfc; /* Change the color */
+    font-weight: 700; /* Ensures bold style */
+    color: #090909; /* Change the color */
 }
 
 header {
     background-color: #333;
-    color: rgb(27, 26, 26);
+    color: rgb(253, 251, 251);
     padding: 20px;
 }
 
@@ -103,10 +109,12 @@ button {
 .prev {
     left: 0;
 }
+
 img {
     max-width: 100%; /* Ensures images don’t overflow */
     height: auto; /* Maintains aspect ratio */
 }
+
 .image-slider img {
     width: 80%; /* Adjust the percentage as needed */
     max-height: 400px; /* Limits height */
