@@ -1,122 +1,75 @@
-/* Adobe Fonts Integration */
-@import url("https://use.typekit.net/iud7cpa.css");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Draws - Portfolio</title>
 
-/*Apply Font to Body */
-body {
-    font-family: "ff-providence-sans-web-pro", sans-serif; /* Correct Adobe Font */
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/iud7cpa.css"> 
+    
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
 
-/*Apply Font to Header */
-h1 {
-    font-family: "ff-providence-sans-web-pro", sans-serif; /* Correct Adobe Font */
-    font-size: 48px; /* Adjust size */
-    font-weight: 700; /* Ensures bold style */
-    color: #fdfcfc; /* Change the color */
-}
+    <!-- JavaScript file (Ensure the script loads correctly) -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Jordan Draws</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-header {
-    background-color: #333;
-    color: rgb(253, 251, 251);
-    padding: 20px;
-}
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Introduce yourself and your passion for design here.</p>
+    </section>
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="gallery-container">
+            <h3>Featured Projects</h3>
+            <div class="image-slider">
+                <div class="image-stack">
+                    <div class="slide">
+                        <img src="image1.jpg" alt="Project 1">
+                        <p>Folkloric</p>
+                    </div>
+                    <div class="slide">
+                        <img src="image2.jpg" alt="Project 2">
+                        <p>Mariachi</p>
+                    </div>
+                    <div class="slide">
+                        <img src="image3.jpg" alt="Project 3">
+                        <p>Zorro</p>
+                    </div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+    </section>
 
-nav ul li {
-    display: inline;
-    margin: 10px;
-}
+    <section id="categories">
+        <h2>Image Categories</h2>
+        <p>Organize your visuals into groups.</p>
+    </section>
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: jdraws2025@gmail.com</p>
+        <a href="https://www.instagram.com/jdraws2025" target="_blank">Follow me on Instagram</a>
+    </section>
 
-section {
-    padding: 50px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Image Gallery Styling */
-.gallery-container {
-    width: 60%;
-    margin: auto;
-    text-align: center;
-}
-
-.image-slider {
-    position: relative;
-    overflow: hidden;
-}
-
-.image-stack {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    min-width: 100%;
-    position: relative;
-}
-
-.slide img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.slide p {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0,0,0,0.6);
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.6);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.next {
-    right: 0;
-}
-
-.prev {
-    left: 0;
-}
-
-img {
-    max-width: 100%; /* Ensures images don’t overflow */
-    height: auto; /* Maintains aspect ratio */
-}
-
-.image-slider img {
-    width: 80%; /* Adjust the percentage as needed */
-    max-height: 400px; /* Limits height */
-    object-fit: contain; /* Ensures the image scales properly */
-}
+    <footer>
+        <p>© 2025 Jordan Draws. All rights reserved.</p>
+    </footer>
+</body>
+</html>
